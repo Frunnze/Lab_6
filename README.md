@@ -53,7 +53,7 @@ There are several ways to implement this principle. Some are more recommended th
 3. Interfaces
 <br>
 4. Composition
-<br>
+<br><br>
 
 We already implemented “Inheritance and polymorphism” in the previous laboratories. However, I will have to add to the hierarchy the new created classes.
 
