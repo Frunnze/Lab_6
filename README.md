@@ -44,10 +44,16 @@ To implement this principle I read to look at each class and give myself the que
 <b>Open-Closed Principle</b>
 <br>
 There are several ways to implement this principle. Some are more recommended than others.
+<br>
+<br>
 1. Inheritance and polymorphism
+<br>
 2. Abstractions
+<br>
 3. Interfaces
+<br>
 4. Composition
+<br>
 
 We already implemented “Inheritance and polymorphism” in the previous laboratories. However, I will have to add to the hierarchy the new created classes.
 
