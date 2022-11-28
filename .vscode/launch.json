@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/air/Desktop/OOP/Laboratories/Lab_6/git_lab_6",
+      "program": "/Users/air/Desktop/OOP/Laboratories/Lab_6/git_lab_6/build/Debug/outDebug"
+    }
+  ]
+}
