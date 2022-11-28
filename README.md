@@ -1,8 +1,9 @@
 # Lab_6
 
-Implementing the SOLID principles
+<h2>Implementing the SOLID principles</h2>
 
-Single-responsibility principle (SRP)
+<b>Single-responsibility principle (SRP)</b>
+<br>
 To implement this principle I read to look at each class and give myself the question: “What is the responsibility of this class?”. If in my answer appeared the word “and” then I had to split the class.
 
 - Class “Bank” had just one responsibility to manipulate the given name. 
@@ -39,8 +40,9 @@ To implement this principle I read to look at each class and give myself the que
 - Class “CurrencyExchangeWindow” has just one responsibility to change the money.
 - Class “Reception”, also, has just one responsibility, that is, to advice the customer.
 
-
-Open-Closed Principle
+<br>
+<b>Open-Closed Principle</b>
+<br>
 There are several ways to implement this principle. Some are more recommended than others.
 1. Inheritance and polymorphism
 2. Abstractions
@@ -49,51 +51,54 @@ There are several ways to implement this principle. Some are more recommended th
 
 We already implemented “Inheritance and polymorphism” in the previous laboratories. However, I will have to add to the hierarchy the new created classes.
 
-
-Liskov Substitution Principle
+<br>
+<b>Liskov Substitution Principle</b>
+<br>
 For this principle I analysed the created hierarchy and I checked each parent and child class for the following condition:
-- The behaviour the subclass should not deviate from the behaviour of the superclass.
++ The behaviour the subclass should not deviate from the behaviour of the superclass.
 
 - Bank
-	- Person
+	- <b>Person</b>
 	- Department
 	- Machine
 	- Window
 
 - Person
-	- CustomerGeneral (it uses the methods)
+	- <b>CustomerGeneral</b> (it uses the methods)
 	- CustomerAtReception
 	- CustomerAtATM
 	- CustomerAtExchangeWindow
 	- CustomerAtTicketMachine
-	- EmployeeData (it uses the methods)
+	- <b>EmployeeData</b> (it uses the methods)
 	- EmployeeInteracting
 
 - Department
-	- CustomerDepartment
-	- InsuranceDepartment
-	- CreditDepartment
-	- InvestmentDepartment
+	- <b>CustomerDepartment</b>
+	- <b>InsuranceDepartment</b>
+	- <b>CreditDepartment</b>
+	- <b>InvestmentDepartment</b>
 
 - Machine 
-	- ATMView
+	- <b>ATMView</b>
 	- ATMData
 	- QueueTicketMachineData	
-	- QueueTicketMachineView
+	- <b>QueueTicketMachineView</b>
 
 - Window
 	- CurrencyExchangeWindow
 	- Reception
 
-
-Interface segregation principle
+<br>
+<b>Interface segregation principle</b>
+<br>
 I didn’t use any interfaces as I didn’t find them necessary for my simulation, but for the sake of this principle I implemented interfaces for the ATM and QueueTicketMachine.
 
 These interfaces satisfy the condition: 
 A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
 
-
-Dependency Inversion Principle
+<br>
+<b>Dependency Inversion Principle</b>
+<br>
 This principle has the following definition:
 - High-level modules should not depend on low-level modules. Both should depend on the abstraction. 
 - Abstractions should not depend on details. Details should depend on abstraction.
@@ -106,29 +111,30 @@ Conclusion:
 In my simulation I do not use any dependency injections, thus, there is no need for me to implement the above principle.
 
 
-Implementing the MVC architecture:
+<h2>Implementing the MVC architecture</h2>
+
 ![alt text](https://miro.medium.com/proxy/0*Qf1s2lG86MjX-Zcv.jpg)
 
 
 
-Prerequisite tasks:
+<b>Prerequisite tasks:</b>
 - Edit the names of the classes accordingly.
 - Put each class in their files.
 
-General conditions to satisfy:
+<b>General conditions to satisfy:</b>
 1. Input is directed to the “Controller”.
 2. Many-to-many relationship between “View” and “Controller”.
 3. “View” doesn’t have any knowledge of the “Controller”
 4. “View” is aware of the “Model” it is expecting to pass on to it.
 
-Conditions for Model:
+<b>Conditions for Model:</b>
 - stores data;
 - processes the data.
 
-Conditions for View:
+<b>Conditions for View:</b>
 - only displays the model's data;
 
-Conditions for Controller:
+<b>Conditions for Controller:</b>
 - integrates the view and model;
 
 
