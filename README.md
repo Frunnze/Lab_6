@@ -128,6 +128,7 @@ In my simulation I do not use any dependency injections, thus, there is no need 
 - Put each class in their files.
 
 <b>General conditions to satisfy:</b>
+0. To put the entities of the app into one of 3 categories: Views, Controller/Presenter/ViewModel, Models.
 1. Input is directed to the “Controller”.
 2. Many-to-many relationship between “View” and “Controller”.
 3. “View” doesn’t have any knowledge of the “Controller”
